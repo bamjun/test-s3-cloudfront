@@ -33,16 +33,18 @@ openssl rsa -pubout -in private_key.pem -out public_key.pem
 
 
 <h3 id="setting-env">`.env` 설정</h3>
-AWS_ACCESS_KEY_ID <- IAM 생성후 CLI용 액세스키 발급
-AWS_SECRET_ACCESS_KEY <- IAM 생성후 CLI용 액세스키 발급
-AWS_S3_REGION_NAME <- 생성한 버킷 리전
 
-CLOUDFRONT_DOMAIN <- 생성한 클라우드프론트 도메인
-CLOUDFRONT_KEY_PAIR_ID <- 클라우드프론트에서 생성한 퍼블릭키 ID
-S3_BUCKET_NAME <- s3 버킷 이름름
+AWS_ACCESS_KEY_ID <- IAM 생성후 CLI용 액세스키 발급  
+AWS_SECRET_ACCESS_KEY <- IAM 생성후 CLI용 액세스키 발급  
+AWS_S3_REGION_NAME <- 생성한 버킷 리전  
+
+CLOUDFRONT_DOMAIN <- 생성한 클라우드프론트 도메인  
+CLOUDFRONT_KEY_PAIR_ID <- 클라우드프론트에서 생성한 퍼블릭키 ID  
+S3_BUCKET_NAME <- s3 버킷 이름  
 
 <h3 id='run-test'>테스트 실행</h3>  
-- uv sync
+
+- uv sync  
     ```bash
     uv sync
     ```
